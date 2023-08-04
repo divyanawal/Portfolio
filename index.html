@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/243aded684.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+   <div class="container">
+    <nav>
+        <img src="8b38345f12c8473a9602c63cce139cb7.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>
+            Web Developer
+        </p>
+        <h1>Hi I'm <span>Divya</span></h1>
+        
+    </div>
+   </div>
+   </div>
+
+    
+   
+  <!---about-->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="IMG-20221229-WA0000.jpg" width="350" height="400">
+            </div>
+            <div class="col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="para">
+                    I am a fresher on the ground of web development and can do many things related to web development.Also ,I have gathered vast knowledge about using coding.Also i never giveup and constantly learn new skills and gather more knowledge to be the better version of myself. 
+                  </p>
+                  <div class="sub-titles">
+                    <p class="sub-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="sub-links active-link"onclick="opentab('experience')">Experience</p>
+                    <p class="sub-links active-link"onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="sub-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web developer</span><br>Designing front-end Web interface</li>
+                        <li><span>Language</span><br>SQL,JS,C++</li>
+                        
+                    </ul>
+                  </div>
+                  <div class="sub-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Current</span><br>
+                            Web Developer At CodeSoft</li>
+                    </ul>
+                  </div>
+                  <div class="sub-contents" id="education">
+                    <ul>
+                        
+                        <li><span>2020-2024</span><br>B.tech from MMMUT</li>
+                        <li><span>2019-2020</span><br>Intermediate From St. Xavier's School</li>
+                        <li><span>2017-2018</span><br>High School  From St. Xavier's School</li>
+                        
+
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+   <!---------services------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Innovative and self-motivated web designer. I used my time to bring visually aesthetic ,responsive,and accessible websites.I am eager to obtain a challenging position at a prestigious company that will expand my learning and build uopn my developer skills.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+          
+        </div>
+    </div>
+   </div>
+   <!----portfolio-->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+              <img src="andras-vas-Bd7gNnWJBkU-unsplash.jpg" width="500" height="500">  
+              <div class="layer">
+                <h3>Tribute page</h3>
+                <p>This webpage dedicated to someone who admire me. </p>
+               <a href="#"></a>
+            </div>
+            </div>
+
+            <div class="work">
+                <img src="walkator-klMii3cR9iI-unsplash.jpg" alt="" width="500" height="500"> 
+                <div class="layer">
+                    <h3>Landing page</h3>
+                    <p>This webpage includes a landing page of a website.</p>
+                   <a href="#"></a>
+                </div> 
+              </div>
+              <div class="work">
+                <img src="markus-spiske-MgtHZ4zlC1U-unsplash.jpg" width="500" height="500">  
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This Website perform basic calculation like addition,subtraction,multiplication.</p>
+                   <a href="#"></a>
+                </div>
+              </div>
+        </div>
+    </div>
+   </div>
+   <!---contact-->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="con-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>divyanwal3@gmail.com</p>
+                <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                    
+                </div>
+                
+            </div>
+            <div class="contact-right">
+<form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+     <input type="email" name="email"placeholder="Your Email" required>
+     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+     <button type="submit" class="btn btn2">Submit</button>
+</form>
+            </div>
+        </div>
+    </div>
+   </div>
+
+ <script>
+    var sublinks= document.getElementsByClassName("sub-links");
+    var subcontents= document.getElementsByClassName("sub-contents");
+    function opentab(tabname){
+        for(sublink of sublinks){
+            sublink.classList.remove("active-link");
+        }
+        for(subcontent of subcontents){
+            subcontent.classList.remove("active-tab");
+        }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+ </script>
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+       sidemenu.style.right="0";
+
+    }
+    function closemenu(){
+       sidemenu.style.right="-200px";
+       
+    }
+ </script>
+
+</body>
+</html>
